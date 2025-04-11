@@ -1,6 +1,6 @@
 import React from 'react';
-
-import night from '../../assets/night.webp'; 
+// import heroImg from '../../assets/rabbit-hero.webp';
+import london from '../../assets/london.webp'; 
 import {Link } from 'react-router-dom';
 
 const Hero = () => {
