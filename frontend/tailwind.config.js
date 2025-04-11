@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        "rabbit-red":"#ff1b00",
+        // "rabbit-red":"#ff1b00",
+        'rabbit-pink': '#FF297B',  
       }
     },
   },

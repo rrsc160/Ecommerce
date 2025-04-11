@@ -1,13 +1,13 @@
 import React from 'react';
-// import heroImg from '../../assets/rabbit-hero.webp';
-import london from '../../assets/london.webp'; 
+
+import night from '../../assets/night.webp'; 
 import {Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <section className="relative">
       <img
-        src={london}
+        src={night}
         alt="rabbit"
         className="w-full h-[400px] md:h-[600px] lg:h-[750px] object-cover"
       />
