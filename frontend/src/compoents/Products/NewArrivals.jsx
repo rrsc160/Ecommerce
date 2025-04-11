@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FiChevronLeft, FiChevronsRight } from 'react-icons/fi';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const NewArrivals = () => {
@@ -64,14 +65,14 @@ const NewArrivals = () => {
             disabled={!canScrollLeft}
             className={`p-2 rounded border ${canScrollLeft ? "bg-white text-black" : "bg-gray-200 text-gray-400 cursor-not-allowed"}`}
           >
-            <FiChevronLeft className="text-2xl" />
+            <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <button
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
             className={`p-2 rounded border ${canScrollRight ? "bg-white text-black" : "bg-gray-200 text-gray-400 cursor-not-allowed"}`}
           >
-            <FiChevronsRight className="text-2xl" />
+            <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>
       </div>
