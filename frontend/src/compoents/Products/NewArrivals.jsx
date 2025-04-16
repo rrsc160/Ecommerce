@@ -17,7 +17,7 @@ const NewArrivals = () => {
     price: 120 + i * 5,
     images: [
       {
-        url: `https://picsum.photos/500/500?random=${i + 1}`,
+        url: `https://picsum.photos/500/500?random=${i + 2}`,
         altText: `Stylish Jacket ${i + 1}`,
       },
     ],
