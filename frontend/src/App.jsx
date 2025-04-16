@@ -7,7 +7,7 @@ import Register from './pages/Register';
 import Profile from "./pages/Profile";
 import CollectionPage from './pages/CollectionPage';
 import ProductsDetails from './compoents/Products/ProductsDetails';
-import CheckOut from './compoents/Cart/CheckOut';
+import CheckOut from './compoents/Cart/Checkout';
 import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import OrderDeatilsPage from './pages/OrderDeatilsPage';
 import MyOrdersPage from './pages/MyOrdersPage';
