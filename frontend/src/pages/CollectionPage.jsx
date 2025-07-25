@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { FaFilter } from 'react-icons/fa';
-import FilterSidebar from '../compoents/Products/FilterSidebar';
-import SortOptions from '../compoents/Products/SortOptions';
+import FilterSidebar from '../components/Products/FilterSidebar';
+import SortOptions from '../components/Products/SortOptions';
 
 const CollectionPage = () => {
     const [products, setProducts] = useState([]);

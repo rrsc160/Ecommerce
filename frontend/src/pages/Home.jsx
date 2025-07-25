@@ -1,10 +1,10 @@
-import Hero from '../compoents/Layout/Hero';
-import FeaturedCollection from '../compoents/Products/FeaturedCollection';
-import FeaturesSection from '../compoents/Products/FeaturesSection';
-import GenderCollectionSection from '../compoents/Products/GenderCollectionSection';
-import NewArrivals from '../compoents/Products/NewArrivals';
-import ProductGrid from '../compoents/Products/ProductGrid';
-import ProductsDetails from '../compoents/Products/ProductsDetails';
+import Hero from '../components/Layout/Hero';
+import FeaturedCollection from '../components/Products/FeaturedCollection';
+import FeaturesSection from '../components/Products/FeaturesSection';
+import GenderCollectionSection from '../components/Products/GenderCollectionSection';
+import NewArrivals from '../components/Products/NewArrivals';
+import ProductGrid from '../components/Products/ProductGrid';
+import ProductsDetails from '../components/Products/ProductsDetails';
 
 const placeholderProducts = [{
   _id: 1,

@@ -1,0 +1,299 @@
+/* Improved CSS for the matrimony website */
+/* Color Palette */
+:root {
+  --primary-red: #b32626;
+  --secondary-gold: #d4af37;
+  --cream: #faebd7;
+  --light-orange: #ffebcd;
+  --light-background: #fff;
+  --dark-text: #333;
+  --light-text: #666;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* Clean, readable font */
+  margin: 0;
+  padding: 0;
+  background-color: var(--cream); /* Cream background */
+  color: var(--dark-text); /* Dark text color */
+  line-height: 1.6; /* Improved line height */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cg fill="%23ffe4e1" fill-opacity="0.1"%3E%3Crect x="50" width="50" height="50"/%3E%3Crect y="50" width="50" height="50"/%3E%3C/g%3E%3C/svg%3E'); /* Very subtle pattern */
+  background-attachment: fixed; /* Fixed background */
+  background-size: 100px 100px; /* Adjust size as needed */ /* Background pattern size */
+  background-repeat: repeat;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+
+
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+/* Header */
+.header {
+  background-color: var(--light-orange);
+  color: var(--dark-text);
+  padding: 1rem 1.5rem; /* Adjusted padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0; /* Stick to top */
+  z-index: 100;
+}
+.logo {
+  width: 80px; /* Larger logo size */
+  height: 80px; /* Larger logo size */
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+.header-title {
+  font-family: 'Playfair Display', serif; /* Decorative font */
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary-red);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.owner-info {
+  text-align: right;
+  font-family: 'Lora', serif;
+  color: var(--light-text);
+  font-size: 0.9rem;
+  letter-spacing: 0.6px; /* Slightly increased letter-spacing */
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  border-radius: 10px; /* Adjusted border-radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.owner-info p {
+  margin: 0;
+}
+/* Navigation Bar */
+.nav {
+  background-color: var(--light-background); /* White navigation bar */
+  color: var(--primary-red);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  position: relative;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 90;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Adjusted gap */
+  align-items: center;
+}
+nav ul li {
+  margin: 0 1rem; /* Adjusted margin */
+}
+nav a {
+  display: flex;
+  align-items: center;
+  color: var(--primary-red);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem; /* Adjusted font-size */
+  transition: color 0.2s ease, text-shadow 0.2s ease; /* Faster transition */
+  padding: 0.5rem 0.75rem; /* Adjusted padding */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+nav .nav-icon {
+  margin-right: 0.5rem;
+}
+nav a:hover {
+  color: var(--secondary-gold);
+  text-shadow: 0 0 8px var(--secondary-gold);
+}
+/* Main Content */
+main{
+  display: flex;
+  flex-grow: 1;
+  padding: 2rem 1rem; /* Adjusted padding */
+  width: 100%;
+}
+.content-area {
+  flex-grow: 1; /* Grow to fill available space */
+  margin-right: 2rem; /* Right margin for sidebar spacing */
+}
+.sidebar {
+  background-color: #f5f0f0; /* Light beige sidebar background */
+  color: var(--dark-text);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  padding: 1rem; /* Adjusted padding */
+  width: 220px;
+  min-width: 200px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.sidebar h2 {
+  background-color: var(--secondary-gold); /* Gold color */
+  padding: 0.75rem 1rem; /* Adjusted padding */
+  margin-bottom: 0.75rem; /* Adjusted margin */
+  color: var(--light-background); /* White text color */
+}
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+.sidebar li {
+  margin-bottom: 0.4rem; /* Adjusted margin */
+}
+
+.sidebar a {
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.sidebar a:hover {
+  color: #d6889c; /* Change color on hover */
+  text-shadow: 0 0 5px rgba(0,0,0,0.3)
+}
+.sidebar .sidebar-icon {
+  margin-right: 0.5rem;
+}
+/* Footer */
+.footer {
+  background-color: var(--primary-red); /* Maroon background */
+  color: var(--light-background); /* White text */
+  padding: 1rem; /* Adjusted padding */
+  margin-top: auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.main{
+  padding-bottom: 2rem;
+}
+/* Form styling */
+form {
+  padding: 1.5rem; /* Adjusted padding */
+  border-radius: 10px; /* Adjusted border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  max-width: 400px;
+  margin: 1.5rem auto; /* Adjusted margin */
+  background-color: var(--light-background); /* White background */
+  border: 1px solid var(--primary-red); /* Red border */
+}
+form label {
+  display: block;
+  margin-bottom: 0.4rem; /* Adjusted margin */
+  color: var(--dark-text); /* Dark text */
+  font-weight: 500;
+}
+.form-group {
+  margin-bottom: 0.8rem; /* Adjusted margin */
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="date"],
+form select {
+  width: 100%;
+  font-size: 0.9rem; /* Adjusted font-size */
+  padding: 0.6rem; /* Adjusted padding */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Adjusted border-radius */
+}
+form:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+form input:focus,
+form input[type="password"]:focus {
+  border-color: #ff69b4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+/* Buttons */
+.search-button,
+button[type="submit"] {
+  width: 100%;
+  font-weight: 600;
+  background-color: var(--primary-red); /* Red buttons */
+  color: var(--light-background); /* White text */
+  padding: 0.6rem 1.2rem; /* Adjusted padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Adjusted font-size */
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Faster transition */
+}
+.search-button:hover,
+button[type='submit']:hover {
+  background-color: #992121; /* Darker red on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Login and Register specific styles */
+.form-container{
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 2rem; /* Add padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+  max-width: 400px;
+  margin: 1.5rem auto; /* Adjusted margin */
+  border: 1px solid var(--primary-red); /* Red border */
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Add margin below */
+  color: #e65c49; /* Red-like color for heading */
+}
+.form-container .form-link {
+  display: block; /* Make the link a block */
+  text-align: center; /* Center the text */
+  margin-top: 1rem; /* Add margin above */
+}
+.form-container .form-link a {
+  color: #e65c49; /* Red-like color for link */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .header, .header .logo-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  .logo {
+      margin-bottom: 1rem;
+  }
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  nav ul {
+  }
+  nav ul li {
+      margin: 0.5rem 0;
+  }
+  main {
+      flex-direction: column;
+  }
+  .sidebar {
+      width: 100%;
+      margin-top: 1rem;
+      margin-left: 0;
+  }
+  .content-area {
+      margin-right: 0;
+  }
+  .owner-info{
+      text-align: center;
+  }
+  .form-container {
+      max-width: 90%; /* Adjust max-width */
+      width: auto; /* Adjust width */
+  }
+}

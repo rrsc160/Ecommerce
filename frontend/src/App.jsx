@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import UserLayout from './compoents/Layout/UserLayout';
+import UserLayout from './components/Layout/UserLayout';
 import Home from './pages/Home';
 import { Toaster } from 'sonner';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from "./pages/Profile";
 import CollectionPage from './pages/CollectionPage';
-import ProductsDetails from './compoents/Products/ProductsDetails';
-import CheckOut from './compoents/Cart/Checkout';
+import ProductsDetails from './components/Products/ProductsDetails';
+import CheckOut from './components/Cart/Checkout';
 import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import OrderDeatilsPage from './pages/OrderDeatilsPage';
 import MyOrdersPage from './pages/MyOrdersPage';
